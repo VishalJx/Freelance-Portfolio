@@ -15,7 +15,10 @@ const Skills = () => {
   )?.skills || [];
 
   return (
-    <section id="skills" className="flex flex-col min-h-[25rem] lg:min-h-[30rem] items-center lg:items-start mt-24 lg:mt-28 gap-3 mx-2">
+    <section
+      id="skills"
+      className="flex flex-col min-h-[25rem] lg:min-h-[30rem] items-center lg:items-start mt-24 lg:mt-28 gap-3 mx-2 opacity-0 animate-fadeIn"
+    >
       <h1 className="uppercase lg:text-[7rem] text-[3rem] text-center sm:text-start font-bold leading-[2.8rem] lg:leading-[6.5rem]">
         SKILLS
         <span className="text-headingGray"> SECTION</span>
@@ -43,7 +46,7 @@ const Skills = () => {
         {activeSkills.map((skill, index) => (
           <div
             key={index}
-            className="h-12 flex items-center justify-center rounded-md border border-gray-300 font-medium text-center shadow-sm hover:shadow-md transition-all"
+            className="h-12 flex items-center justify-center rounded-md border border-gray-300 font-medium text-center shadow-sm hover:shadow-md transition-all opacity-0 animate-slideUp delay-100"
           >
             {skill}
           </div>

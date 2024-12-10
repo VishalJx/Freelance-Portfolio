@@ -24,7 +24,32 @@ module.exports = {
       },
       backgroundImage:{
         'red-gradient': 'url("/assets/mesh-gradient.png")', 
-      }
+      },
+      animation: {
+        fadeInUp: 'fadeInUp 1s ease-out forwards',
+        fadeInLeft: 'fadeInLeft 1s ease-out forwards',
+        fadeIn: 'fadeIn 1s ease-out forwards',
+        slideUp: 'slideUp 0.6s ease-out forwards',
+        
+      },
+      keyframes: {
+        fadeInUp: {
+          '0%': { opacity: 0, transform: 'translateY(20px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+        fadeInLeft: {
+          '0%': { opacity: 0, transform: 'translateX(-30px)' },
+          '100%': { opacity: 1, transform: 'translateX(0)' },
+        },
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+        slideUp: {
+          '0%': { opacity: 0, transform: 'translateY(30px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+      },
     },
   },
   plugins: [],
