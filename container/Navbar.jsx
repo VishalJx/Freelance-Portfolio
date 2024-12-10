@@ -7,6 +7,8 @@ import { IoPersonOutline } from "react-icons/io5";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { BsBook } from "react-icons/bs";
 import { MdWorkOutline } from "react-icons/md";
+import { GoTools } from "react-icons/go";
+
 
 
 const Navbar = () => {
@@ -59,6 +61,11 @@ const Navbar = () => {
             icon: <IoPersonOutline/>
         },
         {
+            name: 'Skills',
+            url: '#skills',
+            icon: <GoTools />
+        },
+        {
             name: 'Experience',
             url: '#experience',
             icon: <MdWorkOutline />
@@ -81,7 +88,7 @@ const Navbar = () => {
                 isVisible ? 'translate-y-0' : '-translate-y-full'
             }`}
         >
-            <ul className='flex items-center justify-center w-[19rem] mx-auto bg-bgGray rounded-3xl'>
+            <ul className='flex items-center justify-center w-[22rem] mx-auto bg-bgGray rounded-3xl'>
                 {navMenu.map((menu, index) => (
                     <li key={index} className='inline-block p-4 text-2xl hover:text-orange duration-300'>
                         <Link href={menu.url} className='nav-link' onClick={clickSmoothScroll}>

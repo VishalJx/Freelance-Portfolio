@@ -7,7 +7,10 @@ const ContactMe = () => {
             LET'S WORK
             <span className='text-headingGray'> TOGETHER</span>
         </h1>
-        <form className='flex flex-col w-full gap-5 mt-[4rem] lg:px-2 px-6'>
+        <form 
+            className='flex flex-col w-full gap-5 mt-[4rem] lg:px-2 px-6'
+            action='https://formspree.io/f/mqakjvke'
+            method='POST'>
             <div className='w-full flex gap-2'>
                 <span className='flex flex-col w-full gap-2'>
                     <label htmlFor="" className='text-sm text-gray-400'>Name</label>
@@ -17,7 +20,7 @@ const ContactMe = () => {
                         name="name"
                         placeholder="Your Name"
                         className="bg-gray-800 text-white rounded-lg px-4 py-3 w-full focus:outline-none focus:ring focus:ring-orange"
-                        />
+                    />
                 </span>
                 <span className='flex flex-col w-full gap-2'>
                     <label htmlFor="" className='text-sm text-gray-400'>Email</label>
@@ -27,7 +30,7 @@ const ContactMe = () => {
                         name="email"
                         placeholder="Your@email.com"
                         className="bg-gray-800 text-white rounded-lg px-4 py-3 w-full focus:outline-none focus:ring focus:ring-orange"
-                        />                
+                    />                
                 </span>
             </div>
 

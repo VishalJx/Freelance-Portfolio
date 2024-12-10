@@ -1,4 +1,5 @@
 import IntroCard from "@/components/IntroCard";
+import About from "@/container/About";
 import ContactMe from "@/container/ContactMe";
 import Experience from "@/container/Experience";
 import HomePage from "@/container/HomePage";
@@ -18,6 +19,7 @@ export default function Home() {
           {/* Right column with scrollable content */}
           <div className="w-full mx-auto lg:w-[42rem] lg:mx-0 border-red-500 my-[0rem] lg:my-[3.2rem] no-scrollbar">
             <HomePage />
+            <About />
             <Skills />
             <Experience />
             <Papers />
